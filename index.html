@@ -773,7 +773,21 @@
         });
 
     </script>
+<script>
+document.addEventListener('click', function (e) {
+    const link = e.target.closest('a');
 
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+    if (!href) return;
+
+    if (href.includes('app.845expo.com')) {
+        e.preventDefault();
+        alert('Please check back later');
+    }
+});
+</script>
 </body>
 
 </html>
