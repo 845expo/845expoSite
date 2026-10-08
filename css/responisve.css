@@ -189,6 +189,10 @@
 }
 
 @media (max-width: 480px) {
+    .hero-content {
+        transform: translateY(-30px);
+    }
+
     .section1 .btn.btn1 span {
         font-size: .65rem !important;
     }
